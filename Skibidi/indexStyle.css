@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1a2c2e; /* Dark Green Background */
+    color: #fff; /* White Text */
+    width: 100%;
+  }
+
+  header {
+    color: #ffffff; /* White Text */
+    padding: 35px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Dark transparent overlay */
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 44, 46, 0.9); /* Dark transparent overlay */
+    z-index: -1; /* Place the overlay behind other content */
+  }
+  
+   header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://ispsc.edu.ph/file-manager/images/News2022/Sta.Maria/Picture8.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -2; /* Place the image behind the overlay https://ispsc.edu.ph/file-manager/images/News2022/Sta.Maria/Picture8.jpg*/
+  }
+  
+  .img1 {
+    width: 20%;
+  }
+  #related-content{
+   /* background-image: url('https://littlesproutspreschool.ca/wp-content/uploads/2020/07/Slide32-e1595571844519.png');*/
+   background-color: rgb(245, 245, 186); 
+   padding: 20px;
+    width: 28%;
+    height: 200px;
+    color: black;
+    float: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left:4%;
+  }
+  #related-content1{
+    /* background-image: url('https://littlesproutspreschool.ca/wp-content/uploads/2020/07/Slide32-e1595571844519.png');*/
+    background-color: rgb(245, 245, 186); 
+    padding: 20px;
+     width: 28%;
+     height: 200px;
+     color: black;
+     float: left;
+     margin-bottom: 10px;
+     border-radius: 5px;
+   }
+   /* Add some styling to the buttons */
+   .scroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a525a;
+    color: #eee7e7;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #99c4c9;
+    color: #080000;
+}
